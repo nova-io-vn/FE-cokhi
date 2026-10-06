@@ -1,0 +1,10 @@
+@keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise-in .65s cubic-bezier(.2,.7,.2,1) both; }
+.delay-150 { animation-delay: 150ms; }
+.hero-industrial { background-position: center; animation: hero-drift 24s ease-in-out infinite alternate; }
+@keyframes hero-drift { from { background-position: 47% center; } to { background-position: 53% center; } }
+.category-card, .product-tile { transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; }
+.product-tile img { transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+.nav-dropdown { transform-origin: top; animation: menu-in .18s ease-out both; }
+@keyframes menu-in { from { opacity: 0; transform: translateY(-6px) scaleY(.98); } to { opacity: 1; transform: translateY(0) scaleY(1); } }
+@media (prefers-reduced-motion: reduce) { .animate-rise, .hero-industrial, .nav-dropdown { animation: none !important; } }
