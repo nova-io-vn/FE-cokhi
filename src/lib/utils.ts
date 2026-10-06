@@ -1,0 +1,1 @@
+import{clsx,type ClassValue}from'clsx';import{twMerge}from'tailwind-merge';export const cn=(...v:ClassValue[])=>twMerge(clsx(v));export const money=(v?:number|null)=>v==null?'Liên hệ':new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND',maximumFractionDigits:0}).format(v);

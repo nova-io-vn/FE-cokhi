@@ -1,0 +1,1 @@
+import type{ButtonHTMLAttributes}from'react';import{cn}from'../../lib/utils';export default function Button({className,variant='primary',...p}:ButtonHTMLAttributes<HTMLButtonElement>&{variant?:'primary'|'dark'|'outline'}){return <button className={cn('btn',variant==='primary'?'btn-primary':variant==='dark'?'btn-dark':'btn-outline',className)} {...p}/>}
